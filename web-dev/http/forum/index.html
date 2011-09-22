@@ -1,0 +1,99 @@
+﻿<style type="text/css">
+    .rightAlign {
+ text-align: right;
+    }
+</style>
+ <script type="text/javascript">
+
+     function WriteToFile() {
+        
+         var str;
+         str = txtbox.value;
+         alert(str);
+         
+         
+     }
+</script>
+
+<script type="text/javascript">
+    function alertMe() {
+        alert("hello");
+
+    }
+</script>
+
+
+
+<!---Hello there, reader. Do you want to use this code for your site?---->
+<!---You probably do, why else would you be here?--->
+<!---Go ahead, we would not have any problems with it--->
+<!---BUT! THE CSS ISN"T THAT PERFECT. Re-writing the CSS to fit your purpose would be better (and wouldn't take long) for you--->
+<!---~KryptonX--->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Forums</title>
+     <link href="main.css" rel="stylesheet" type="text/css" />
+     <script src="../js/loadError.js" type="text/javascript"></script>
+     <script src="../js/pages.js" type="text/javascript"></script>
+     <script src="post.js"" type="text/javascript"></script>
+</head>
+<body onload="getInternetExplorerVersion()o">
+
+<div class="clear hideSkiplink">
+<button onclick="indexPg()" type="button" name="homeBtn" title="Navigate to index page" style="border-top-style: ridge;">
+                Main
+                </button> |
+                <button onclick="aboutPg()" title="Navigate to about page" type="button" name="aboutPg" style="border-top-style: ridge;">
+                About Page
+                </button> |
+                
+                <button onclick="libraryPg()" type="button" title="Navigate to wiki" name="wikiBtn" style="border-top-style: ridge;">
+                Library
+                </button> |
+                                 
+                <button onclick="forumPg()" disabled="disabled" type="button" title="Navigate to forum" name="forumBtn" style="border-top-style: ridge;">
+                Forum
+                </button>
+                <br />               
+                
+            </div>
+<div class="page">
+        <div class="header">
+
+<h1>Krypton Wiki - Forum</h1>
+
+          </div>
+       <h2>Discussion:</h2>
+       <hr style="border-style: groove;" /><center>
+       <iframe height="500" width="460" id="posts" scrolling="yes" src="posts.txt" style="background-color: #fff">       
+       
+       </iframe>
+             <br />
+       <h1 style="color="#fff">Post</h1>
+       <br />
+       <textarea cols="70" rows="10" id="txtbox">   
+       </textarea><br />
+
+      <button onclick="alertMe()" style="background-color: steelblue;" title="Post argument" type="button" name="aboutPg" style="border-top-style: ridge;">
+       <p><b>Post</b></p>
+       </button>
+       <button onclick="cancel()" style="background-color: firebrick;" title="Cancel" type="button" name="cancelPost" style="border-top-style: ridge;">
+       <p><b>Cancel</b></p>
+       </button>
+       </center>
+       
+   </div>   
+
+  
+    
+   <div class="footer">
+   <b>Copyright © 2011</b>
+   <br />
+   <b><i>All posts belong to us!</i></b>
+   
+   </div>
+
+</body>
+</html>
